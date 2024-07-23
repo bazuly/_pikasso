@@ -4,8 +4,8 @@ Bike Rental API *Test project
 
 
 Требования
-Docker
-Docker Compose
+Docker,
+Docker Compose,
 Для РФ можно использовать Podman или настроить зеркало в docker
 Postman/CURL
 
