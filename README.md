@@ -10,13 +10,13 @@ Bike Rental API *Test project
 - Postman/CURL
 
 
-- Развертывание
+Развертывание
 - Шаг 1: Клонирование репозитория
 - Клонируйте репозиторий на вашу локальную машину:
 - git clone https://github.com/ваш-username/bike-rental-api.git
 - cd pikasso
-
-- Шаг 2: Настройка окружения
+- 
+Шаг 2: Настройка окружения
 - Убедитесь, что у вас есть файл .env, для удобства не добавлял его в gitingore
 - Если есть желание, можно использовать свои переменные для postgresql 
 - Пример: 
@@ -26,7 +26,7 @@ Bike Rental API *Test project
 - POSTGRES_HOST=db
 - POSTGRES_PORT=5432
 
-- Шаг 3: Запуск контейнеров Docker
+Шаг 3: Запуск контейнеров Docker
 - Запустите контейнеры Docker с помощью Docker Compose:
 
 - Для docker:
@@ -35,20 +35,20 @@ Bike Rental API *Test project
 - Для Podman:
 - podman-compose up --build
 
-- Шаг 5: Создание суперпользователя
+Шаг 4: Создание суперпользователя
 - Создайте суперпользователя для доступа к админ-панели Django:
 - docker-compose run web python manage.py createsuperuser
 
-- Шаг 6: Доступ к приложению
+Шаг 5: Доступ к приложению
 - После успешного запуска контейнеров приложение будет доступно по адресу http://localhost:8000/api/
 
-- Шаг 7: Доступ к документации API
+Шаг 6: Доступ к документации API
 - Документация API будет доступна по следующим URL:
 
 - Swagger UI: http://localhost:8000/swagger/
 - Redoc: http://localhost:8000/redoc/
 
-- Основные эндпоинты API
+Основные эндпоинты API
 - Регистрация пользователя: POST /register/
 - Получение токена: POST /token/
 - Обновление токена: POST /token/refresh/
@@ -57,7 +57,7 @@ Bike Rental API *Test project
 - Возврат велосипеда: POST /return-bike/<rental_id>/
 - История аренды: GET /rental-history/
 
-- Тестирование
+Тестирование
 - Чтобы запустить тесты, используйте следующую команду:
 - docker-compose run web pytest /
 - podman-compose run web pytest
